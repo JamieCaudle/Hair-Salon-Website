@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* ////////////////////// */
+
+body {
+ text-align: center;
+
+  /* font-family: 'Roboto Mono', monospace; MAKE THIS MY FONT FAMILY */
+}
+
+/* Header */
+
+.header-pic {
+display: flex;
+text-align: center;
+justify-content: center;
+margin-top: 30px;
+}
+
+
+/* //// NAVIGATION ///// */
+nav.navigation {
+  width: 100%;
+  height: 64px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ul {
+  display: flex;
+
+}
+li {
+  padding: 30px;
+  font-size: 18px;
+  margin-top: 60px ;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a {
+  color: black;
+  text-align:center;
+}
+a:active {
+  color: turquoise;
+  font-weight: 300;
+}
+a:hover {
+  cursor: pointer;
+  color: turquoise;
+}
+
+
+/* Form Section */
+
+form{
+  margin-top: 10px;
+}
+
+input {
+  background-color: transparent;
+  color: black;
+  font-size: large;
+  text-align: center;
+  justify-content: center;
+  outline: none;
+  width: 60%; 
+  padding: 12px 20px;
+  margin: 20px 0;
+  border: none;
+  border: 2px solid black;
+}
+
+label {
+font-size: 20px;
+} 
+
+textarea {
+  width: 60%;
+  height: 200px;
+  background-color: transparent;
+  color: black;
+  font-size: large;
+  border: none;
+  border: 2px solid black;
+  padding: 10px;
+  line-height: 1.5;
+  resize: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  background-color: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+
+/* Footer Section */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  background-color: black;
+}
+
+footer > p {
+  display: inline;
+  margin: auto;
+  font-size: medium;
+  color: white;
+}
+
+.icons {
+  margin: auto;
+  display: inline-block;
+  color: white;
+}
+
+.social-icon {
+  padding-right: 10px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  nav.navigation ul {
+    display: none;
+  }
+
+ 
+
+  a {
+    color: white;
+  }
+
+  nav.navigation ul.show-mobile-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+   
+  }
+}

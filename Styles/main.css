@@ -1,4 +1,4 @@
-* {
+* body {
   margin: 0;
   padding: 0;
 }
@@ -7,10 +7,8 @@
 
 body {
   height: 100%;
-  width: 100%;
   font-family: "Oswald", sans-serif;
 }
-
 
 .logo {
   display: block;
@@ -52,16 +50,10 @@ a:hover {
   margin-bottom: 30px;
 }
 
-
 .pic-text-container {
-position: absolute;
-top: 45%;
-right: 25%;
-align-items: center;
-flex-direction: column;
-text-align: center;
-display: flex;
-
+  position: absolute;
+  top: 45%;
+  right: 25%;
 }
 
 .white-box {
@@ -69,7 +61,7 @@ display: flex;
   font-weight: bold;
   background-color: white;
   width: fit-content;
-  padding: 10px;
+  padding: 0 10px;
   margin-bottom: 30px;
   text-transform: capitalize;
 }
@@ -77,10 +69,14 @@ display: flex;
 .black-box {
   width: fit-content;
   margin-bottom: 18px;
-  padding: 10px;
+  padding: 0 10px;
   font-size: 20px;
   background-color: black;
   color: white;
+}
+
+.pic-text {
+  padding: 5px 0;
 }
 
 .main-btn {
@@ -102,8 +98,8 @@ display: flex;
 /* Bottom Section */
 
 .bottom-pic-container {
- display: flex;
- margin-top:;
+  display: flex;
+  margin-top: ;
   justify-content: space-evenly;
   flex-direction: row;
 }
@@ -127,8 +123,7 @@ footer {
   display: flex;
   flex-direction: row;
   height: 150px;
-  background-color: black
-  
+  background-color: black;
 }
 
 footer > p {
@@ -148,12 +143,12 @@ footer > p {
   padding-right: 10px;
 }
 
-nav label, #hamburger  {
+nav label,
+#hamburger {
   display: none;
 }
 
 @media (max-width: 768px) {
-
   nav label {
     display: inline-block;
     color: teal;
@@ -164,7 +159,7 @@ nav label, #hamburger  {
     margin-left: 45%;
   }
 
- nav ul li {
+  nav ul li {
     display: block;
     text-align: center;
   }
@@ -178,37 +173,41 @@ nav label, #hamburger  {
     display: block;
   }
 
- .direction {
-   color: black;
- }
+  .direction {
+    color: black;
+  }
 
- .pic-container {
-   max-width: 100%;
-   overflow: hidden;
-  background-size: contain;
-  background-position: right;
- }
- 
- .pic-text-container { 
-   top: 65%;
-   right: 15%;
- }
+  .pic-container {
+    max-width: 100%;
+    overflow: hidden;
+    background-size: contain;
+    background-position: right;
+  }
 
- .bottom-pic-container {
-   display: flex;
-  flex-direction: column;
- justify-content: center; 
- text-align: center;
+  .pic-text-container {
+    top: 42%;
+    right: 15%;
+  }
+
+  .bottom-pic-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .icons {
+    justify-content: space-evenly;
+  }
 }
 
-footer {
-  flex-direction: column;
+@media (min-width: 992px) {
+  .pic-text-container {
+    top: 44%;
+    right: 15%;
+  }
 }
-
-.icons {
-  justify-content: space-evenly;
-
-}
-
-}
-
