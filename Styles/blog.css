@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+body {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+/* //// NAVIGATION ///// */
+nav.navigation {
+  width: 100%;
+  height: 64px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+li {
+  padding: 30px;
+  font-size: 18px;
+  margin-top: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+a:active {
+  color: turquoise;
+  font-weight: 300;
+}
+a:hover {
+  cursor: pointer;
+  color: turquoise;
+}
+
+/* Header */
+
+.header-pic {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 45px;
+  color: white;
+  background-color: black;
+  padding: 5px 15px;
+  margin: 65px auto 10px;
+}
+
+/* Main Section */
+
+main {
+  display: grid;
+  margin: auto;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-img {
+  width: 100%;
+}
+
+p {
+  width: 300px;
+  margin: 30px auto;
+}
+
+.positioning {
+  margin: auto;
+}
+
+.main-titles {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  border: 2px solid black;
+  margin: 5px 2px;
+}
+
+.section-button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.section-button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+/* Footer Section */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  background-color: black;
+  margin-top: 30px;
+}
+
+footer > p {
+  display: inline;
+  margin: auto;
+  font-size: medium;
+  color: white;
+}
+
+.icons {
+  margin: auto;
+  display: inline-block;
+  color: white;
+}
+
+.social-icon {
+  padding-right: 10px;
+}
+
+@media (min-width: 915px) {
+  .title {
+    width: fit-content;
+  }
+
+  main {
+    height: fit-content;
+    width: max-content;
+    margin: auto;
+  }
+
+  section {
+    flex-direction: row;
+  }
+
+  .section-img {
+    width: fit-content;
+    border-right: 2px solid black;
+  }
+
+  .main-titles {
+    margin: 40px 50px auto;
+  }
+
+  .section-button {
+    margin-top: 10px;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  nav.navigation ul {
+    display: none;
+  }
+  .services__container {
+    flex-direction: column;
+  }
+  nav.navigation ul.show-mobile-nav {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    padding-top: 55px;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    box-shadow: -7px -1px 13px 0px rgba(0, 0, 0, 0.22);
+  }
+  a {
+    color: white;
+    font-size: 20px;
+  }
+  li {
+    padding: 0;
+  }
+}
