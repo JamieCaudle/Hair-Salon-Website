@@ -1,51 +1,69 @@
-* body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background: none;
 }
-
-/* Header section */
 
 body {
   height: 100%;
   font-family: "Oswald", sans-serif;
 }
 
-.logo {
-  display: block;
-  margin: 3% auto;
+/* Header section */
+
+.header-pic {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-nav {
-  max-width: 1000px;
-  margin: auto;
-  display: block;
+/* //// NAVIGATION ///// */
+nav.navigation {
+  width: 100%;
+  height: 64px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
   display: flex;
-  justify-content: center;
 }
-
 li {
+  padding: 30px;
+  font-size: 18px;
+  margin-top: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
   list-style-type: none;
 }
-.direction {
-  flex-direction: row;
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 20px;
-}
 
+a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+a:active {
+  color: turquoise;
+  font-weight: 300;
+}
 a:hover {
-  color: teal;
+  cursor: pointer;
+  color: turquoise;
 }
 
 /* Main Section */
 
-.main-pic {
+.pic-container {
+  height: 554px;
+  background-image: url(/Images/home-the-beacon.jpg);
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -143,71 +161,49 @@ footer > p {
   padding-right: 10px;
 }
 
-nav label,
-#hamburger {
-  display: none;
-}
-
 @media (max-width: 768px) {
-  nav label {
-    display: inline-block;
-    color: teal;
-    font-style: normal;
-    font-size: xx-large;
-    padding: 10px;
-    cursor: pointer;
-    margin-left: 45%;
-  }
-
-  nav ul li {
-    display: block;
-    text-align: center;
-  }
-  nav ul li {
-    border-top: 3px solid turquoise;
-  }
-  nav ul {
+  nav.navigation ul {
     display: none;
   }
-  nav input:checked ~ ul {
-    display: block;
+
+  nav.navigation ul.show-mobile-nav {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    padding-top: 55px;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    box-shadow: -7px -1px 13px 0px rgba(0, 0, 0, 0.22);
+    z-index: 1;
+  }
+  a {
+    color: white;
+    font-size: 20px;
+  }
+  li {
+    padding: 0;
+    text-align: center;
   }
 
-  .direction {
-    color: black;
+  input {
+    width: 70%;
   }
 
-  .pic-container {
-    max-width: 100%;
-    overflow: hidden;
-    background-size: contain;
-    background-position: right;
-  }
-
-  .pic-text-container {
-    top: 42%;
-    right: 15%;
+  textarea {
+    width: 70%;
   }
 
   .bottom-pic-container {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
   }
 
   footer {
     flex-direction: column;
-  }
-
-  .icons {
-    justify-content: space-evenly;
-  }
-}
-
-@media (min-width: 992px) {
-  .pic-text-container {
-    top: 44%;
-    right: 15%;
   }
 }

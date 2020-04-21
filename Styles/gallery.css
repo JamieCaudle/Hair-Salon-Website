@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+body {
+  height: 100%;
+  font-family: "Oswald", sans-serif;
+}
+
+/* //// NAVIGATION ///// */
+nav.navigation {
+  width: 100%;
+  height: 64px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+li {
+  padding: 30px;
+  font-size: 18px;
+  margin-top: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+a:active {
+  color: turquoise;
+  font-weight: 300;
+}
+a:hover {
+  cursor: pointer;
+  color: turquoise;
+}
+
+/* Header */
+
+.header-pic {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 45px;
+  color: white;
+  background-color: black;
+  padding: 5px 25px;
+  margin: 65px auto 20px;
+  width: fit-content;
+}
+
+/* Main Section */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+}
+
+img {
+  margin: 15px;
+  border: 3px solid black;
+  opacity: 0.8;
+  transition: 0.5s ease-in-out;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+/* Footer Section */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  background-color: black;
+  margin-top: 40px;
+}
+
+footer > p {
+  display: inline;
+  margin: auto;
+  font-size: medium;
+  color: white;
+}
+
+.icons {
+  margin: auto;
+  display: inline-block;
+  color: white;
+}
+
+.social-icon {
+  padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  nav.navigation ul {
+    display: none;
+  }
+
+  nav.navigation ul.show-mobile-nav {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    padding-top: 55px;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    box-shadow: -7px -1px 13px 0px rgba(0, 0, 0, 0.22);
+    z-index: 1;
+  }
+
+  a {
+    color: white;
+    font-size: 20px;
+  }
+  li {
+    padding: 0;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: auto;
+  }
+
+  .gallery-img {
+    margin: auto;
+    width: 98%;
+  }
+}

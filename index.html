@@ -14,43 +14,32 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css"
     />
+    <link rel="stylesheet" href="/Styles/hamburger-nav-styles.css" />
     <link rel="stylesheet" href="Styles/main.css" />
     <title>Hair Salon</title>
   </head>
 
   <body>
-    <section class="header">
-      <img class="logo" src="/Images/logo.jpg" alt="Mustacchio Logo" />
-      <nav>
-        <label for="hamburger">&#9776;</label>
-        <input type="checkbox" id="hamburger" />
-        <ul>
-          <li>
-            <a class="direction" href="/index.html">Home</a>
-          </li>
-          <li>
-            <a class="direction" href="/about.html">About</a>
-          </li>
-          <li>
-            <a class="direction" href="/gallery.html">Gallery</a>
-          </li>
-          <li>
-            <a class="direction" href="/blog.html">Blog</a>
-          </li>
-          <li>
-            <a class="direction" href="/contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
+    <div class="header-pic">
+      <img src="/Images/logo.jpg" alt="Company-Logo" />
+    </div>
 
-    <main class="pic-container">
-      <img
-        class="main-pic"
-        src="/Images/home-the-beacon.jpg"
-        alt="man in sunglasses looking towards screen"
-      />
-    </main>
+    <nav class="navigation">
+      <ul>
+        <li><a class="nav-link" href="/index.html">Home</a></li>
+        <li><a class="nav-link" href="/about.html">About</a></li>
+        <li><a class="nav-link" href="/gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="/blog.html">Blog</a></li>
+        <li><a class="nav-link" href="/contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger border" onclick="openMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <main class="pic-container"></main>
 
     <section class="pic-text-container">
       <div class="white-box">
@@ -107,5 +96,7 @@
         <i class="fab fa-pinterest-square fa-3x social-icon"></i>
       </section>
     </footer>
+
+    <script src="/app.js"></script>
   </body>
 </html>

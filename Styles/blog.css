@@ -196,9 +196,7 @@ footer > p {
   nav.navigation ul {
     display: none;
   }
-  .services__container {
-    flex-direction: column;
-  }
+ 
   nav.navigation ul.show-mobile-nav {
     display: flex;
     flex-direction: column;

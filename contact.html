@@ -14,31 +14,34 @@
   rel="stylesheet"
   href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css"
 />
+<link rel="stylesheet" href="/Styles/hamburger-nav-styles.css">
   <link rel="stylesheet" href="/Styles/contact.css">
-  <link rel="stylesheet" href="/Styles/hamburger-nav-styles.css">
   <title>Contact</title>
 </head>
 <body>
   
-<div class="header-pic">
-    <img src="/Images/logo.jpg" alt="Company-Logo">
+  <div class="header-pic">
+    <img src="/Images/logo.jpg" alt="Company-Logo" />
   </div>
 
+  <nav class="navigation">
+    <ul>
+      <li><a class="nav-link" href="/index.html">Home</a></li>
+      <li><a class="nav-link" href="/about.html">About</a></li>
+      <li><a class="nav-link" href="/gallery.html">Gallery</a></li>
+      <li><a class="nav-link" href="/blog.html">Blog</a></li>
+      <li><a class="nav-link" href="/contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger border" onclick="openMobileNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 
-      <nav class="navigation">
-        <ul>
-          <li><a class="nav-link" to="">Home</a></li>
-          <li><a class="nav-link" to="/">About</a></li>
-          <li><a class="nav-link" to="/">Gallery</a></li>
-          <li><a class="nav-link" to="/">Blog</a></li>
-          <li><a class="nav-link" to="/">Contact</a></li>
-        </ul>
-        <div class="hamburger border" onclick="openMobileNav()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
+  <section>
+    <p class="title">let's keep in touch</p>
+  </section>
 
   
   <form action="results.html" method="GET" enctype="multipart/form-data">
@@ -64,10 +67,6 @@
          class="placeholder" placeholder="Type Message Here" 
           id="Message"
           name="Message"
-          rows="5"
-          cols="33"
-          minlength="20"
-          maxlength="500"
         ></textarea>
       </div>
       <button class="submit-button" type="submit">Submit</button>
