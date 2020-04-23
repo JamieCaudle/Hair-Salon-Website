@@ -64,14 +64,18 @@ a:hover {
 .pic-container {
   height: 554px;
   background-image: url("../Images/home-the-beacon.jpg");
-  margin-top: 30px;
-  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 30px auto;
 }
 
 .pic-text-container {
-  position: absolute;
-  top: 45%;
-  right: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: 500px;
 }
 
 .white-box {
@@ -196,6 +200,15 @@ footer > p {
 
   textarea {
     width: 70%;
+  }
+
+  .pic-container {
+    background-position: left;
+  }
+
+  .pic-text-container {
+    align-items: flex-start;
+    margin-left: 30px;
   }
 
   .bottom-pic-container {
