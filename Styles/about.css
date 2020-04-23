@@ -95,7 +95,7 @@ a:hover {
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 150px;
   background-color: black;
 }
@@ -156,10 +156,7 @@ footer > p {
     margin: auto;
     margin-bottom: 30px;
   }
-}
 
-@media (max-width: 992) {
   footer {
-    flex-direction: row;
+    flex-direction: column;
   }
-}
