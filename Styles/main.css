@@ -63,7 +63,7 @@ a:hover {
 
 .pic-container {
   height: 554px;
-  background-image: url(/Images/home-the-beacon.jpg);
+  background-image: url("../Images/home-the-beacon.jpg");
   margin-top: 30px;
   margin-bottom: 30px;
 }
